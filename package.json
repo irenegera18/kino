@@ -1,0 +1,28 @@
+{
+  "name": "kino",
+  "version": "1.0.0",
+  "description": "kinopoisk tests",
+  "main": "index.js",
+  "scripts": {
+    "start": "webdriver-manager start",
+    "test": "protractor conf.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine-allure-reporter": "^1.0.2",
+    "jasmine-console-reporter": "latest",
+    "jasmine-core": "latest",
+    "jasmine-spec-reporter": "^5.0.2",
+    "jasmine2-custom-message": "latest",
+    "allure-commandline": "^2.13.0",
+    "jasmine-reporters": "^2.0.0",
+    "protractor": "^5.4.4",
+    "protractor-beautiful-reporter": "^1.3.6",
+    "protractor-jasmine2-screenshot-reporter": "^0.5.0",
+    "protractor-screenshot-reporter": "0.0.5",
+    "sg-protractor-tools": "^1.0.4",
+    "webdriver-manager": "12.1.7"
+  }
+
+}
