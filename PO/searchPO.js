@@ -1,4 +1,4 @@
-const { browser } = require('protractor');
+const { browser, element } = require('protractor');
 
 let SearchPage;
 
@@ -43,6 +43,12 @@ SearchPage = function() {
 
         this.enterFilmName = function() {
             filmNameField.sendKeys(data.filmName);
+        };
+
+        this.chooseCountry = function() {
+            countryList.sendKeys(data.filmCountry);
+            //countryList.click();
+            //element(by.xpath('//select[@id="country]/option[@value="2"]')).click();
         };
 
         this.returnSearchButton = function() {

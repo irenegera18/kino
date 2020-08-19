@@ -1,4 +1,5 @@
 let SearchPage = require('../PO/searchPO.js');
+const { browser } = require('protractor');
 //const { ExpectedConditions, browser } = require('protractor');
 
 describe('Film searching', () => {
@@ -15,6 +16,8 @@ describe('Film searching', () => {
 
     it('Check film to be found', () => {
         searchPage.enterFilmName();
+        searchPage.chooseCountry();
+        browser.sleep(4000);
         searchPage.clickSearchButton();
             
         browser.wait(EC.textToBePresentInElement(searchPage.returnResultFilmID(), 'Кавказская пленница!'), 15000);
