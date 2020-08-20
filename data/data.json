@@ -2,7 +2,9 @@
     "baseUrl": "https://www.kinopoisk.ru/",
     "searchUrl": "https://www.kinopoisk.ru/s/",
     "randomFilmUrl": "https://www.kinopoisk.ru/chance/",
+    "bestFilmsUrl": "https://www.kinopoisk.ru/top/navigator/",
     "filmName": "кавказская пленница",
-    "filmCountry": "Россия"
+    "filmCountry": "Россия",
+    "filmGenre": "комедия"
 }
 

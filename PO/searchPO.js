@@ -45,10 +45,14 @@ SearchPage = function() {
             filmNameField.sendKeys(data.filmName);
         };
 
+        this.chooseGenre = function() {
+            genrePicker.sendKeys();
+        };
+
         this.chooseCountry = function() {
             countryList.sendKeys(data.filmCountry);
-            //countryList.click();
-            //element(by.xpath('//select[@id="country]/option[@value="2"]')).click();
+            //element(by.cssContainingText('option', 'Россия')).click();
+            
         };
 
         this.returnSearchButton = function() {

@@ -17,6 +17,7 @@ describe('Film searching', () => {
     it('Check film to be found', () => {
         searchPage.enterFilmName();
         searchPage.chooseCountry();
+        searchPage.chooseGenre();
         browser.sleep(4000);
         searchPage.clickSearchButton();
             

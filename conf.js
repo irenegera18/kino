@@ -8,9 +8,12 @@ exports.config = {
     directConnect: true,
     baseUrl: 'https://www.kinopoisk.ru/',
     framework: 'jasmine2',
-    specs: [
-        './specs/search.js'
-      ],
+    suites: {
+        search: './specs/search.spec.js',
+
+        best: './specs/best-search.spec.js'
+
+    },
     
     jasmineNodeOpts: {
         showColors: true, // Use colors in the command line report.
